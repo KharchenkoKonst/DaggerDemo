@@ -6,9 +6,9 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-interface SubScopeModule {
+interface ActivityModule {
 
     @Binds
-    @SubScope
+    @ActivityScope
     fun provideService(service: ServiceImpl): Service
 }

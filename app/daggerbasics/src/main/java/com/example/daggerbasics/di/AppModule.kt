@@ -6,9 +6,10 @@ import com.example.daggerbasics.domain.interactors.InteractorImpl
 import com.example.daggerbasics.domain.repositories.Repository
 import dagger.Binds
 import dagger.Module
+import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
-@Module
+@Module(includes = [AndroidSupportInjectionModule::class])
 interface AppModule {
 
     @Binds

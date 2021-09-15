@@ -1,12 +1,15 @@
 package com.example.daggerbasics.di
 
 import android.app.Application
+import com.example.daggerbasics.di.subscope.DaggerActivityComponent
 
 class ComponentHolder : Application() {
 
     companion object {
 
-        private val appComponent = DaggerAppComponent.create()
-        fun getAppComponent() = appComponent
+        val appComponent = DaggerAppComponent.create()
+        val activityComponent = DaggerActivityComponent.builder()
+            .appComponent(appComponent)
+            .build()
     }
 }

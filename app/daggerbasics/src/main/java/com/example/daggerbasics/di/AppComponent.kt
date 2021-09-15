@@ -5,10 +5,10 @@ import com.example.daggerbasics.domain.repositories.Repository
 import dagger.Component
 import javax.inject.Singleton
 
-@Component(modules = [AppModule::class])
 @Singleton
+@Component(modules = [AppModule::class])
 interface AppComponent {
 
-    val repository: Repository
-    fun getInteractor(): Interactor
+    fun repository(): Repository
+    fun interactor(): Interactor
 }
