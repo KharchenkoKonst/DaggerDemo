@@ -6,7 +6,7 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "DaggerDemo"
+rootProject.name = "DependencyInjection"
 include ':app'
 include ':app:dagger'
 include ':app:koin'
