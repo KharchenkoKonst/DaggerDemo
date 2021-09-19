@@ -24,5 +24,6 @@ class MainActivity : AppCompatActivity() {
 
         ComponentHolder.activityComponent.inject(this)
         service.showImAlive()
+
     }
 }

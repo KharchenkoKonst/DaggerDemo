@@ -1,4 +1,4 @@
-package com.example.koin.domain.interactor
+package com.example.koin.domain.interactors
 
 interface Interactor {
     fun getVoice()
