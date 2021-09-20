@@ -1,4 +1,4 @@
-package com.example.dagger.di
+package com.example.dagger.di.app
 
 import com.example.dagger.data.repositories.RepositoryImpl
 import com.example.dagger.domain.interactors.Interactor
@@ -9,11 +9,12 @@ import dagger.Module
 import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
-//граф зависимостей
-/** Совокупность всех объектов, которые умеет создавать компонент
+/**
+ * Граф зависимостей:
+ *  Совокупность всех объектов, которые умеет создавать компонент
  * - это граф объектов компонента или граф зависимостей компонента.
  */
-@Module(includes = [AndroidSupportInjectionModule::class])
+@Module
 interface AppModule {
 
     @Binds

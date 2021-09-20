@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class RepositoryImpl @Inject constructor() : Repository {
 
-    override fun showImAlive() {
-        Log.i("DI", "repository do useful work")
+    init {
+        Log.i("daggerDI", "repository")
     }
 }

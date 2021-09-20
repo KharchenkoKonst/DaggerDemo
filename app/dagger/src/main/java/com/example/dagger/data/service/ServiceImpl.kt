@@ -6,10 +6,6 @@ import javax.inject.Inject
 
 class ServiceImpl @Inject constructor(repository: Repository) : Service {
     init {
-        repository.showImAlive()
-    }
-
-    override fun showImAlive() {
-        Log.i("serviceDI", "hello")
+        Log.i("daggerDI", "service")
     }
 }

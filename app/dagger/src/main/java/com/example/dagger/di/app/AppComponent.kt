@@ -1,4 +1,4 @@
-package com.example.dagger.di
+package com.example.dagger.di.app
 
 import com.example.dagger.domain.interactors.Interactor
 import com.example.dagger.domain.repositories.Repository
