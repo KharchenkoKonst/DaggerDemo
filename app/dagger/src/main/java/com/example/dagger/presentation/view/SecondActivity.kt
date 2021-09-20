@@ -1,5 +1,6 @@
 package com.example.dagger.presentation.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -27,5 +28,9 @@ class SecondActivity : AppCompatActivity() {
          */
         findViewById<TextView>(R.id.second_text_view).text =
             "$service \n $serviceCopy"
+    }
+
+    fun onClick(view: android.view.View) {
+        startActivity(Intent(this, FirstActivity::class.java))
     }
 }
