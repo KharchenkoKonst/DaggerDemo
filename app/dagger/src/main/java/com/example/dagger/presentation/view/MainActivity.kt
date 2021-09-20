@@ -10,6 +10,11 @@ import com.example.dagger.presentation.viewmodel.MainViewModel
 import com.example.dagger.presentation.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
+//Показать работу скоупа
+//generated классы как работают
+//добавить квалификаторы (2 способа описания)
+//subcomponents
+//можно ли управлять жизненным циклом через scope
 class MainActivity : AppCompatActivity() {
 
     private val viewModelFactory = ViewModelFactory(ComponentHolder.appComponent.interactor())

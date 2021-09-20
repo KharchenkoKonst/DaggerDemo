@@ -9,6 +9,8 @@ import dagger.Module
 import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
+//граф зависимостей
+//
 @Module(includes = [AndroidSupportInjectionModule::class])
 interface AppModule {
 
