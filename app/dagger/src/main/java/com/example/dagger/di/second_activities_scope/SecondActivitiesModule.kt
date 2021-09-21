@@ -1,4 +1,4 @@
-package com.example.dagger.di.second_activity
+package com.example.dagger.di.second_activities_scope
 
 import com.example.dagger.data.service.Service
 import com.example.dagger.data.service.FirstServiceImpl
@@ -6,9 +6,9 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-interface SecondActivityModule {
+interface SecondActivitiesModule {
 
     @Binds
-    @SecondActivityScope
+    @SecondActivitiesScope
     fun provideService(service: FirstServiceImpl): Service
 }

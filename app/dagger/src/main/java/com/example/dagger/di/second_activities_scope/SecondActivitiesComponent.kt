@@ -1,15 +1,15 @@
-package com.example.dagger.di.second_activity
+package com.example.dagger.di.second_activities_scope
 
 import com.example.dagger.di.app.AppComponent
 import com.example.dagger.presentation.view.SecondActivity
 import dagger.Component
 
-@SecondActivityScope
+@SecondActivitiesScope
 @Component(
     dependencies = [AppComponent::class],
-    modules = [SecondActivityModule::class]
+    modules = [SecondActivitiesModule::class]
 )
-interface SecondActivityComponent {
+interface SecondActivitiesComponent {
 
     fun inject(activity: SecondActivity)
 }

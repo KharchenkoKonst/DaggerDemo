@@ -1,4 +1,4 @@
-package com.example.dagger.di.first_activity
+package com.example.dagger.di.first_activities_scope
 
 import com.example.dagger.data.service.Service
 import com.example.dagger.data.service.FirstServiceImpl
@@ -6,7 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-interface FirstActivityModule {
+interface FirstActivitiesModule {
 
     @Binds
     @FirstActivitiesScope

@@ -1,8 +1,7 @@
 package com.example.dagger.di.app
 
 import android.app.Application
-import com.example.dagger.di.first_activity.DaggerFirstActivitiesComponent
-import com.example.dagger.di.second_activity.DaggerSecondActivityComponent
+import com.example.dagger.di.first_activities_scope.DaggerFirstActivitiesComponent
 
 class ComponentHolder : Application() {
 

@@ -1,4 +1,4 @@
-package com.example.dagger.di.first_activity
+package com.example.dagger.di.first_activities_scope
 
 import com.example.dagger.di.app.AppComponent
 import com.example.dagger.presentation.view.FirstActivity
@@ -8,7 +8,7 @@ import dagger.Component
 @FirstActivitiesScope
 @Component(
     dependencies = [AppComponent::class],
-    modules = [FirstActivityModule::class]
+    modules = [FirstActivitiesModule::class]
 )
 interface FirstActivitiesComponent {
 
