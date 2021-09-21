@@ -13,8 +13,22 @@ import com.example.dagger.presentation.viewmodel.MainViewModel
 import com.example.dagger.presentation.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
-//Показать работу скоупа
-//generated классы как работают (разобраться с внутренностями)
+//  Граф зависимостей:
+/**
+ *  Совокупность всех объектов, которые умеет создавать компонент
+ * - это граф объектов компонента или граф зависимостей компонента.
+ */
+
+//  Показать работу скоупа
+
+//  Как работают generated-классы (разобраться с внутренностями)
+/**
+ * Сгенерированный класс реализует интерфейс написанного компонента.
+ * Хранит в себе все доступные провайдеры (соответственно построенному графу зависимостей);
+ * inject() - это get(). В inject передаётся instance для заполнения зависимостями;
+ * Внешние зависимости компонента - static (вроде как)
+ */
+
 //добавить квалификаторы (2 способа описания)
 //subcomponents
 //можно ли управлять жизненным циклом через scope
@@ -31,6 +45,7 @@ class FirstActivity : AppCompatActivity() {
 
     @Inject
     lateinit var serviceCopy: Service
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -21,7 +21,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        ComponentHolder.secondActivityComponent.inject(this)
+        ComponentHolder.firstActivityComponent.inject(this)
 
         /**
          * Demonstrate of Scope's work

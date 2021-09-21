@@ -12,4 +12,4 @@ import kotlin.annotation.AnnotationRetention.RUNTIME
  */
 @Scope
 @Retention(RUNTIME)
-annotation class FirstActivityScope
+annotation class FirstActivitiesScope

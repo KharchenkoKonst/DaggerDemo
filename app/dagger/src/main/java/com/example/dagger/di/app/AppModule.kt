@@ -9,11 +9,6 @@ import dagger.Module
 import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
-/**
- * Граф зависимостей:
- *  Совокупность всех объектов, которые умеет создавать компонент
- * - это граф объектов компонента или граф зависимостей компонента.
- */
 @Module
 interface AppModule {
 
