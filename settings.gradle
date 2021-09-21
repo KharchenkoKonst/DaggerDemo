@@ -10,3 +10,4 @@ rootProject.name = "DependencyInjection"
 include ':app'
 include ':app:dagger'
 include ':app:koin'
+include ':app:dagger_subcomponents'
