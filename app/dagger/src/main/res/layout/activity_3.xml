@@ -5,27 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.view.SecondActivity">
+    tools:context=".presentation.second_scope.Activity3">
 
     <TextView
-        android:id="@+id/second_text_view"
+        android:id="@+id/third_activity_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Activity 3: Second Scope"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_to_second_activity"
+    <TextView
+        android:id="@+id/third_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:onClick="onClick"
-        android:text="on Second Activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/second_text_view" />
+        app:layout_constraintTop_toBottomOf="@id/third_activity_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

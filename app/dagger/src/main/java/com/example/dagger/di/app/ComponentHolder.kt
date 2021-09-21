@@ -2,6 +2,7 @@ package com.example.dagger.di.app
 
 import android.app.Application
 import com.example.dagger.di.first_activities_scope.DaggerFirstActivitiesComponent
+import com.example.dagger.di.second_activities_scope.DaggerSecondActivitiesComponent
 
 class ComponentHolder : Application() {
 
@@ -12,9 +13,9 @@ class ComponentHolder : Application() {
         val firstActivityComponent = DaggerFirstActivitiesComponent.builder()
             .appComponent(appComponent)
             .build()
-//
-//        val secondActivityComponent = DaggerSecondActivityComponent.builder()
-//            .appComponent(appComponent)
-//            .build()
+
+        val secondActivityComponent = DaggerSecondActivitiesComponent.builder()
+            .appComponent(appComponent)
+            .build()
     }
 }

@@ -1,4 +1,4 @@
-package com.example.dagger.presentation.view
+package com.example.dagger.presentation.first_scope
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,11 +9,13 @@ import com.example.dagger.R
 import com.example.dagger.R.layout
 import com.example.dagger.data.service.Service
 import com.example.dagger.di.app.ComponentHolder
+import com.example.dagger.presentation.second_scope.Activity3
 import com.example.dagger.presentation.viewmodel.MainViewModel
 import com.example.dagger.presentation.viewmodel.ViewModelFactory
 import javax.inject.Inject
+import javax.inject.Named
 
-class FirstActivity : AppCompatActivity() {
+class Activity1 : AppCompatActivity() {
 
     /**
      * Injecting by Provide method
@@ -21,16 +23,17 @@ class FirstActivity : AppCompatActivity() {
     private val viewModelFactory = ViewModelFactory(ComponentHolder.appComponent.interactor())
     private val viewModel by viewModels<MainViewModel>()
 
+    @Named("FirstService")
     @Inject
     lateinit var service: Service
 
+    @Named("SecondService")
     @Inject
     lateinit var serviceCopy: Service
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_main)
+        setContentView(layout.activity_1)
 
         /**
          * Injecting by Inject method
@@ -40,7 +43,11 @@ class FirstActivity : AppCompatActivity() {
             "$service \n $serviceCopy"
     }
 
-    fun onClick(view: android.view.View) {
-        startActivity(Intent(this, SecondActivity::class.java))
+    fun onSecondActivityClick(view: android.view.View) {
+        startActivity(Intent(this, Activity2::class.java))
+    }
+
+    fun onThirdActivityClick(view: android.view.View) {
+        startActivity(Intent(this, Activity3::class.java))
     }
 }

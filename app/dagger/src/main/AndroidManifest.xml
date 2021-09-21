@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DaggerDemo" >
         <activity
-            android:name=".presentation.view.SecondActivity"
+            android:name=".presentation.second_scope.Activity3"
             android:exported="true" />
         <activity
-            android:name=".presentation.view.FirstActivity"
+            android:name=".presentation.first_scope.Activity2"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.first_scope.Activity1"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
