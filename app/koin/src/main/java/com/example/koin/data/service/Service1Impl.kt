@@ -5,10 +5,8 @@ import org.koin.core.component.KoinScopeComponent
 import org.koin.core.component.createScope
 import org.koin.core.scope.Scope
 
-class ServiceImpl() : Service {
-
-
+class Service1Impl() : Service {
     override fun getVoice() {
-        Log.i("koinDI", "service")
+        Log.i("koinDI", "service 1")
     }
 }
